@@ -5,11 +5,12 @@
 }
 
 body {
-
+    position: relative;
     height: 100vh;
+    width: 100vw;
     background-color: #fffffff2;
-
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -30,18 +31,17 @@ ul {
 
 .main {
     display: flex;
-    flex: 1;
     flex-direction: column;
     margin: 20px;
+
 }
 
 .head {
 
+    /* border:2px solid blue; */
+    position: relative;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-
 
 
 }
@@ -54,86 +54,285 @@ ul {
 }
 
 .navl {
+    /* width:100vw; */
+    /* position: fixed; */
+    /* top: 0px; */
+    /* left: 10px; */
+    /* z-index:20; */
+
     background-color: #fffffff2;
     padding-left: 40px;
     box-sizing: border-box;
     display: flex;
-    flex: 1;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .nav {
+
+    border: 2px solid red;
     padding-right: 40px;
     color: black;
     font-size: 14px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
     gap: 16px;
 
 }
 
 .headcontent {
 
-    margin-top: 25px;
+    position: relative;
     display: flex;
-    color: #fffffff2;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* border: 5px solid red ;  */
+
+    background-color: black;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
-    box-sizing: border-box;
-    height: 650px;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
 
+}
+
+.textbox {
+
+    margin-left: 100px;
+
+    color: #fffffff2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 550px;
+    ;
+    height: 300px;
+    /* border:2px solid purple ; */
+    overflow: hidden;
+}
+
+.text1,
+.text2 {
+    /* flex-shrink:1;  */
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    /* border:2px solid blue;  */
 
 
 }
 
-.text-box {
+.img-1 {
 
+    flex-shrink: 1;
+    display: block;
+    width: 670px;
+    height: auto;
+    /* border:2px solid green; */
+    box-sizing: border-box;
+    margin-right: 250px;
+
+}
+
+img {
+    /* flex-shrink: 1; */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* chest */
+
+.chest {
+
+    margin-top: 10px;
+    /* border : 2px solid red ;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+
+}
+
+.card_head {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: solid;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    /* border:2px solid blue;  */
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border:2px solid black; */
+    width: 100%;
+    height: 500px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: #fffffff2;
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    margin-left: 20%;
+    padding: 5px;
+
+    align-items: center;
+    /* border:2px solid green  ;   */
+    width: 300px;
+    height: 450px;
+}
+
+.card_img_box {
+
+    /* border: 2px  solid #cb2027; */
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
 
 }
 
-.textbox1 {
-
-
-    padding-left:   80px;
-
-}
-
-.textbox2 {
-
-    padding-left: 20px;
-}
-
-
-/* setting the container size for the first image */
-
-.img-1 {
-       height: 100%;
-       width:auto;
-      
-
-}
-
-.img-1 img {
-    /* making sure the image fits in the img-1 container  */
-
-    object-fit: contain;
+.card_img {
+    border-radius: 25px;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
-    
-   
+}
+
+.card_text {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "cinzel", serif;
+    padding: 10px;
+    text-transform: lowercase;
+    text-align: center;
+    display: block;
+    /* border:2px solid black; */
+    width: 90%;
+    height: 100px;
+    margin-top: 5px;
+}
+
+/* Waist */
+.waist {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 800px;
+    background-image: url(./images/gang.webp);
+    background-size: 100%, 100%, cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+
+
+
+}
+
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.4);
+    /* border:2px solid #cb2027; */
+    display: block;
+    box-sizing: border-box;
+
+}
+
+.laytext {
+    padding: 100px;
+    position: relative;
+    top: 300px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    /* border:2px solid black; */
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: #fffffff2;
+
+}
+
+/* legs */
+.legs {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid black; */
+
+}
+
+.knees {
+    position: relative;
+    top: 50px;
+    left: 20rem;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    border: 2px inset whitesmoke;
+    background-color: black;
+}
+
+.knees_text {
+    padding-top: 5px;
+    padding-left: 50px;
+    text-transform: uppercase;
+    font-size:40px ; 
+    font-weight: 100;
+    color:#fffffff2;
+    display: block;
+    width: 70%;
+    height: 90%;
+    border: 2px outset whitesmoke;
+    box-sizing: border-box;
+
+
+}
+
+.buttons {
+
+    font-family: "cinzel",serif;
+    font-weight: bold;;
+    color:#fffffff2
+    border:2px inset;
+    border-color:#fffffff2;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
 }
